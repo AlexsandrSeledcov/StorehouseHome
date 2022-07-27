@@ -37,22 +37,28 @@ namespace Storehouse.View
         private void WinHome_OnLoaded(object sender, RoutedEventArgs e)
         {
             TblcCurrentUser.Text = "Вход: " + App.CurrentUser.Post + " " + App.CurrentUser.FIO_Full;
-            
-            _ucArrivals = new UcTransactions(1);
-            GrdArrivals.Children.Add(_ucArrivals);
-            _ucMovement = new UcTransactions(0);
-            GrdMovementGoods.Children.Add(_ucMovement);
-            _ucWriteOffs = new UcTransactions(-1);
-            GrdWriteOffs.Children.Add(_ucWriteOffs);
+            if (App.CurrentUser.Role == 0 && App.CurrentUser.Role == 1 && App.CurrentUser.Role == 2)
+            {
+                _ucArrivals = new UcTransactions(1);
+                GrdArrivals.Children.Add(_ucArrivals);
+                _ucMovement = new UcTransactions(0);
+                GrdMovementGoods.Children.Add(_ucMovement);
+                _ucWriteOffs = new UcTransactions(-1);
+                GrdWriteOffs.Children.Add(_ucWriteOffs);
+                _ucGoodsHistory = new UcGoodsHistory();
+                GrdGoodsHistory.Children.Add(_ucGoodsHistory);
+            }
             _ucStore = new UcStore();
             GrdBalances.Children.Add(_ucStore);
-            _ucGoodsHistory = new UcGoodsHistory();
-            GrdGoodsHistory.Children.Add(_ucGoodsHistory);
+
             MiDir.Visibility = App.CurrentUser.Role != 1 ? Visibility.Collapsed : Visibility.Visible;
-           
 
 
-
+            TabItemGrdArrivals.Visibility = App.CurrentUser.Role == 3 ? Visibility.Collapsed : Visibility.Visible;
+            TabItemGrdMovementGoods.Visibility = App.CurrentUser.Role == 3 ? Visibility.Collapsed : Visibility.Visible;
+            TabItemGrdWriteOffs.Visibility = App.CurrentUser.Role == 3 ? Visibility.Collapsed : Visibility.Visible;
+            TabItemGrdGoodsHistory.Visibility = App.CurrentUser.Role == 3 ? Visibility.Collapsed : Visibility.Visible;
+            
         }
 
       

@@ -109,20 +109,20 @@
             </Menu>
         </DockPanel>
         <TabControl Name="TabControl1">
-                
-            <TabItem  Header="ПОСТУПЛЕНИЯ" >
+
+            <TabItem Name="TabItemGrdArrivals" Header="ПОСТУПЛЕНИЯ" >
                 <Grid Name="GrdArrivals"/>
             </TabItem>
-            <TabItem Header="ПЕРЕМЕЩЕНИЯ">
+            <TabItem Name="TabItemGrdMovementGoods" Header="ПЕРЕМЕЩЕНИЯ">
                 <Grid Name="GrdMovementGoods"/>
             </TabItem>
-            <TabItem Header="СПИСАНИЯ">
+            <TabItem Name="TabItemGrdWriteOffs" Header="СПИСАНИЯ">
                 <Grid Name="GrdWriteOffs"/>
-            </TabItem>           
-            <TabItem Header="ОСТАТКИ">
+            </TabItem>
+            <TabItem Name="TabItemGrdBalances"  Header="ОСТАТКИ">
                 <Grid Name="GrdBalances"/>
             </TabItem>
-            <TabItem Header="ИСТОРИЯ">
+            <TabItem  Name="TabItemGrdGoodsHistory" Header="ИСТОРИЯ">
                 <Grid Name="GrdGoodsHistory"/>
             </TabItem>
         </TabControl>
