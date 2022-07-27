@@ -42,10 +42,10 @@
                         break;
                     }
                     case 3:
-                        {
-                            role = "Подотчетный сотрудник";
-                            break;
-                        }
+                    {
+                        role = "Подотчетный сотрудник";
+                        break;
+                    }
                 }
                 return role;
             }

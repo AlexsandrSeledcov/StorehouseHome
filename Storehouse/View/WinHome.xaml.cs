@@ -37,7 +37,7 @@ namespace Storehouse.View
         private void WinHome_OnLoaded(object sender, RoutedEventArgs e)
         {
             TblcCurrentUser.Text = "Вход: " + App.CurrentUser.Post + " " + App.CurrentUser.FIO_Full;
-            if (App.CurrentUser.Role == 0 && App.CurrentUser.Role == 1 && App.CurrentUser.Role == 2)
+            if (App.CurrentUser.Role == 0 || App.CurrentUser.Role == 1 || App.CurrentUser.Role == 2)
             {
                 _ucArrivals = new UcTransactions(1);
                 GrdArrivals.Children.Add(_ucArrivals);
