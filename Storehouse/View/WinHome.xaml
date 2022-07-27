@@ -100,12 +100,29 @@
                                    VerticalAlignment="Center"/>
                     </DockPanel>
                 </MenuItem.Header>
+                
+                
 
 
                 <MenuItem Header="Сменить пароль"
                           Click="MenuPassChange_OnClick"/>
             </MenuItem>
-           
+                
+                <MenuItem Name="NOTES_INFO" >
+                    <MenuItem.Header>
+                        <DockPanel>
+                            <Image Source="/Storehouse;component/Images/i16/gears.png"/>
+                            <TextBlock Text="СПРАВОЧНЫЙ БЛОК С ПОЛОЖЕНИЯМИ" 
+                                   VerticalAlignment="Center"/>
+                        </DockPanel>
+                    </MenuItem.Header>
+
+
+
+
+                    <MenuItem Header="Положения"
+                          Click="MenuPassChange_OnClick"/>
+                </MenuItem>
             </Menu>
         </DockPanel>
         <TabControl Name="TabControl1">
