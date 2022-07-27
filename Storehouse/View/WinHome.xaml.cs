@@ -49,6 +49,10 @@ namespace Storehouse.View
             _ucGoodsHistory = new UcGoodsHistory();
             GrdGoodsHistory.Children.Add(_ucGoodsHistory);
             MiDir.Visibility = App.CurrentUser.Role != 1 ? Visibility.Collapsed : Visibility.Visible;
+           
+
+
+
         }
 
       

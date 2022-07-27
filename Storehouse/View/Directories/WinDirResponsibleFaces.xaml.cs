@@ -3,7 +3,7 @@ using System.Windows;
 using System.Linq;
 using System.Windows.Input;
 
-//СПРАВОЧНИК МОЛ
+    
 namespace Storehouse.View.Directories
 {
     public partial class WinDirResponsibleFaces

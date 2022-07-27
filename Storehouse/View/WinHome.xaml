@@ -108,8 +108,9 @@
            
             </Menu>
         </DockPanel>
-            <TabControl>
-            <TabItem Header="ПОСТУПЛЕНИЯ" >
+        <TabControl Name="TabControl1">
+                
+            <TabItem  Header="ПОСТУПЛЕНИЯ" >
                 <Grid Name="GrdArrivals"/>
             </TabItem>
             <TabItem Header="ПЕРЕМЕЩЕНИЯ">
@@ -125,6 +126,15 @@
                 <Grid Name="GrdGoodsHistory"/>
             </TabItem>
         </TabControl>
-        
+
+
+<!-- 
+        <TabControl Name="TabControl2">
+        <TabItem Header="ОСТАТКИ2">
+            <Grid Name="GrdBalances2"/>
+        </TabItem>
+        </TabControl>
+-->
+
     </DockPanel>
 </Window>
