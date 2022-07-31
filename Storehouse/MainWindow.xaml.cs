@@ -131,7 +131,7 @@ namespace Storehouse
 
 
 
-                Close();
+                Close(); 
             }
             else
                 MessageBox.Show("Неверный пароль");
