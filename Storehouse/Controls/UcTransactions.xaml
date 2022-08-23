@@ -164,7 +164,30 @@
                           SelectionChanged="DgrTransactions_OnSelectionChanged">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Date, StringFormat=\{0:dd.MM.yyyy\}}"
-                                            Header="Дата">
+                                            Header='Дата выдачи'
+                                            x:Name="DgrColDateOfIssue">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Margin" Value="5,1"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Date, StringFormat=\{0:dd.MM.yyyy\}}"
+                                            Header='Дата поступления'
+                                            x:Name="DgrColDateReceipt">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Margin" Value="5,1"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Date, StringFormat=\{0:dd.MM.yyyy\}}"
+                                            Header='Дата списания'
+                                            x:Name="DgrColDate">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="Margin" Value="5,1"/>

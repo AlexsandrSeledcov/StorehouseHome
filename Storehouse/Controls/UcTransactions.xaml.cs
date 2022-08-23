@@ -190,11 +190,22 @@ namespace Storehouse.Controls
                 case 1:
                     {
                         DgrColEmployeer.Visibility = Visibility.Collapsed;
+                        DgrColDateOfIssue.Visibility = Visibility.Collapsed;
+                        DgrColDate.Visibility = Visibility.Collapsed;
                         break;
                     }
                 case -1:
                     {
                         DgrColUser.Visibility = Visibility.Collapsed;
+                        DgrColDateOfIssue.Visibility = Visibility.Collapsed;
+                        DgrColDateReceipt.Visibility = Visibility.Collapsed;
+                        break;
+                    }
+                case 0:
+                    {
+                        DgrColUser.Visibility = Visibility.Collapsed;
+                        DgrColDateReceipt.Visibility = Visibility.Collapsed;
+                        DgrColDate.Visibility = Visibility.Collapsed;
                         break;
                     }
             }

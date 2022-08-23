@@ -93,6 +93,7 @@ namespace Storehouse.Controls
                                   Price = g.Price,
                                   CategoryName = g.CategoryName,
                                   GoodsId = g.GoodsId
+                                 // DateOfEndService = g.
                               };
                               _balances.Add(balanceGoods);
                           }

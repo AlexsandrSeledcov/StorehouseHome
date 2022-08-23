@@ -36,6 +36,11 @@ namespace Storehouse
                             res = "списание";
                             break;
                         }
+                    case 2:
+                        {
+                            res = "остатки";
+                            break;
+                        }
                 }
                 return res;
             }

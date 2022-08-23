@@ -252,7 +252,18 @@
                         </Style>
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
-
+                
+                <DataGridTextColumn Binding="{Binding Date, StringFormat=\{0:dd.MM.yyyy\}}"
+                                            Header='Дата окончания срока службы'
+                                            x:Name="DgrColDateReceipt">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Margin" Value="5,1"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
 
 
             </DataGrid.Columns>
